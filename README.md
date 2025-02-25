@@ -1,4 +1,4 @@
-# fetch-rewards-sr_data_analyst
+# Fetch Rewards Senior Data Analyst
 This repository is a take home assessment for the Fetch Rewards Senior Data Analyst position.
 
 ### Data Exploration
@@ -7,15 +7,15 @@ The data provided for this take home is easy to understand, however there are so
 
 ### SQL Queries and Questions
 
-After exploring the data with pandas, I exported as CSV's and created queries in SQL. Those can be found here:[top_brands_21](), [top_brands_acct_age](), and [power_users](). 
+After exploring the data with pandas, I exported as CSV's and created queries in SQL. Those can be found here:[top_brands_21](https://github.com/deannagould/fetch-rewards-sr_data_analyst/blob/main/sql_queries/top_brands_21.sql), [top_brands_acct_age](https://github.com/deannagould/fetch-rewards-sr_data_analyst/blob/main/sql_queries/top_brands_acct_age.sql), and [power_users](https://github.com/deannagould/fetch-rewards-sr_data_analyst/blob/main/sql_queries/power_users.sql). 
 
-1. What are the top 5 brands by receipts scanned among users 21 and over?
+*1. What are the top 5 brands by receipts scanned among users 21 and over?*
 
 While determining top brands by sales for users over 21, I noticed that there were a lot of `BIRTH_DATE` values that were not null, but unrealistic. Some users had an age of 115 years old. This is likely due to a date slider starting at a certain date, and users not setting it to their actual birth date. 
 
-The top 5 brands by receipts scanned among users 21 and over were 1) Coca-Cola (527 receipts), 2) Great Value (384 receipts), 3) Pepsi (361 receipts), 4) Equate (341 receipts), and 5) Lay's (324 receipts). [top_brands_21]().
+The top 5 brands by receipts scanned among users 21 and over were 1) Coca-Cola (527 receipts), 2) Great Value (384 receipts), 3) Pepsi (361 receipts), 4) Equate (341 receipts), and 5) Lay's (324 receipts). [top_brands_21](https://github.com/deannagould/fetch-rewards-sr_data_analyst/blob/main/sql_queries/top_brands_21.sql).
 
-2. What are the top 5 brands by sales among users that have had their account for at least six months?
+*2. What are the top 5 brands by sales among users that have had their account for at least six months?*
 
 The top 5 brands by sales among users with an account age of 6+ months were:
 1. CVS ($72)
@@ -24,13 +24,13 @@ The top 5 brands by sales among users with an account age of 6+ months were:
 4. Trident ($23.36)
 5. Axe ($15.98)
 
-[top_brands_acct_age]()
+[top_brands_acct_age](https://github.com/deannagould/fetch-rewards-sr_data_analyst/blob/main/sql_queries/top_brands_acct_age.sql)
 
-3. Who are Fetch’s power users?
+*3. Who are Fetch’s power users?*
 
 Answering this open-ended question required an assumption. I defined Fetch's power users as those who scan the most receipts, and not by those who spend the most. There were 9 users that had scanned 6 receipts in the past 6 months, with a geography spread across the US. The states included New York, West Virginia, Tennessee, Wisconsin, Connecticut, Pennsylvania, and Georgia. 
 
-[power_users]()
+[power_users](https://github.com/deannagould/fetch-rewards-sr_data_analyst/blob/main/sql_queries/power_users.sql)
 
 
 
